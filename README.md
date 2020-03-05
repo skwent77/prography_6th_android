@@ -20,9 +20,9 @@
 ----
 ### 구현 화면 간단 요약
    <div>
-   <img width="250" src="https://user-images.githubusercontent.com/46518769/75943205-b8d27000-5ed7-11ea-9d48-0aa3e3b59227.jpg" " hspace="20" >
-   <img width="250" src="https://user-images.githubusercontent.com/46518769/75943238-cdaf0380-5ed7-11ea-9adf-b22001a977a4.jpg" hspace="20">
-   <img width="250" src="https://user-images.githubusercontent.com/46518769/75943210-ba9c3380-5ed7-11ea-87e1-42a3851ca6ba.jpg" hspace="20">
+   <img width="250" src="https://user-images.githubusercontent.com/46518769/75943205-b8d27000-5ed7-11ea-9d48-0aa3e3b59227.jpg" " hspace="10" >
+   <img width="250" src="https://user-images.githubusercontent.com/46518769/75943238-cdaf0380-5ed7-11ea-9adf-b22001a977a4.jpg" hspace="10">
+   <img width="250" src="https://user-images.githubusercontent.com/46518769/75943210-ba9c3380-5ed7-11ea-87e1-42a3851ca6ba.jpg" hspace="10">
    </div>
 
 
@@ -119,7 +119,8 @@
  
 #### 위 사진 에서 주황색으로 표시된 20번째 item을 클릭하면 아래 마지막 사진(When Marnie Was There)의 새로운 DetailActivity가 펼쳐진다. 
 Intent에 putExtra() 이용해서 정보를 전송
-- 링크: https://youtu.be/Pgatq0ZIwWg
+#### 2번째 FragmentChats상에서 RecyclerView의 item 클릭시 화면이 전환되는 과정
+- 동영상 링크: https://youtu.be/Pgatq0ZIwWg 
 #### MovieAdapter.java에서 정보 전송
  ```java
  itemView.setOnClickListener(new View.OnClickListener() {
@@ -152,4 +153,4 @@ Intent에 putExtra() 이용해서 정보를 전송
 ```
 
 ![detailActivity](https://user-images.githubusercontent.com/46518769/75943664-f5eb3200-5ed8-11ea-9ea0-892c4042d290.jpg)
->>>>>>> c0d8ad81b9303fb9ec79039d27fe574f7d217470
+
