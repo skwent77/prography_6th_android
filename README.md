@@ -2,6 +2,8 @@
 # prography_6th_android 사전과제
 
 
+### 앱 시연 영상 링크
+ - https://youtu.be/i9VrQ1phwoc
 ### To Run this project
 ----
    #### first, git clone this file to your repository/ download Zip File and import the project
@@ -52,7 +54,7 @@
 
 
  #### [MainActivity 순수 화면]
- 
+ - 실제 앱 실행 화면이 아닌 fragment를 올리지 않은 상태의 
  - ViewPager와 BottomNavigationView 2개가 구현되어 있는 상태
 
  
@@ -117,6 +119,7 @@
  
 #### 위 사진 에서 주황색으로 표시된 20번째 item을 클릭하면 아래 마지막 사진(When Marnie Was There)의 새로운 DetailActivity가 펼쳐진다. 
 Intent에 putExtra() 이용해서 정보를 전송
+- 링크: https://youtu.be/Pgatq0ZIwWg
 #### MovieAdapter.java에서 정보 전송
  ```java
  itemView.setOnClickListener(new View.OnClickListener() {
