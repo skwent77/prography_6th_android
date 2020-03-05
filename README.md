@@ -1,5 +1,4 @@
 
-=======
 # prography_6th_android 사전과제
 
 
@@ -17,7 +16,7 @@
   2. https://square.github.io/retrofit/
   3. https://github.com/google/gson/blob/master/UserGuide.md
 ----
-###구현 화면 간단 요약
+### 구현 화면 간단 요약
    <div>
    <img width="250" src="https://user-images.githubusercontent.com/46518769/75943205-b8d27000-5ed7-11ea-9d48-0aa3e3b59227.jpg" " hspace="20" >
    <img width="250" src="https://user-images.githubusercontent.com/46518769/75943238-cdaf0380-5ed7-11ea-9adf-b22001a977a4.jpg" hspace="20">
@@ -36,9 +35,9 @@
  - Fragment를 처리하는 PagerAdapter는 두 가지 Class가 존재한다. 하나는 FragmentPagerAdapter 이고 다른 하나는 FragmentStatePagerAdapter
  
  2. 네트워크 통신 
- - OkHttp3를 통하여 url에서 데이터를 가져온다. url에 JSON 정보가 담겨있다. response를 이용해 url속 JSON정보를 받아온다. 
+ - API 요청부분과 URL은 따로 관리하는 방식으로 ApiInterface를 설계하였습니다. 
  - HTTP통신을 지원하는 라이브러리 중 Retrofit을 사용하였다. Retrofit을 사용하기 위하여 MoveService interface을 정의하고, 이 interface class을 Retrofit에 초기화를 하는 과정을 거쳤습니다.
- - retrofit은 json응답을 간단하게 변환할 수 있도록 다양한 Converter를 제공하고 있으며 addConverterFactory()메소드를 통해 이루어집니다. Gson을 이용하기 위해서 GsonConverterFactory를 추가했습니다
+ - retrofit은 JSON 형태의 데이터 응답을 간단하게 변환할 수 있도록 다양한 Converter를 제공하고 있으며 addConverterFactory()메소드를 통해 이루어집니다. 객체의 역직렬화에 Gson을 이용하기 위해서 GsonConverterFactory를 추가했습니다
   
 ----
 ### 상세하게 화면 뜯어보기
@@ -65,15 +64,14 @@
  
  
  
-![chats](https://user-images.githubusercontent.com/46518769/75943238-cdaf0380-5ed7-11ea-9adf-b22001a977a4.jpg)
- 
+<img src="https://user-images.githubusercontent.com/46518769/75971704-8182b400-5f15-11ea-9fe3-247fbcd2c760.jpg"  width="50%" height="40%"></img> 
  
  
  
  # [2번째 fragment]
  
- - 20개의 item을 Retrofit을 사용하여 데이터 받아온 후에 chatsFragment에 번호,제목,감독,출시년도 나열
- - androidx 의 RecyclerView와 CardView 이용하여 위아래로 스크롤 가능한 Fragment를 만들었습니다
+ - 20개의 item을 Retrofit을 사용하여 데이터 받아온 후에 FragmentChats에 번호,제목,감독,출시년도 나열
+ - androidx 의 RecyclerView와 CardView 이용하여 가운데 FragmentChats를 만들었습니다
  <br>
  Retrofit turns your HTTP API into a Java interface.
  ```java
