@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_call"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="CALLS"/>
+    <item
+        android:id="@+id/navigation_chats"
+        android:enabled="true"
+
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="CHATS"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_contacts"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="CONTACTS"/>
+</menu>
