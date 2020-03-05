@@ -11,7 +11,7 @@
         android:layout_weight="1"
         android:padding="3dp"
         android:paddingLeft="3dp"
-        card:cardBackgroundColor="#ECDBE1"
+        card:cardBackgroundColor="#E0DBEC"
         card:cardCornerRadius="10dp"
         card:cardUseCompatPadding="true">
 
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#544B4B"
+                android:background="#5e4f5e"
                 android:gravity="center"
                 android:text="1"
                 android:textColor="#FFFFFF" />

@@ -36,12 +36,9 @@ public class FragmentChats extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         movieAdapter = new MovieAdapter( movies);
         recyclerView.setAdapter(movieAdapter);
-
         getMovies();
         return rootView;
     }
-
-
     private void getMovies(){
         //gson을 사용하는 ApiService인터페이스가
         ApiService apiInterface = ServiceGenerator.createService(ApiService.class);
