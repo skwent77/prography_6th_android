@@ -7,7 +7,6 @@
 ### To Run this project
 ----
    #### first, git clone this file to your repository/ download Zip File and import the project
-       we run this file on gpu and you should check server address. 
        
    #### second, build and run the app
     in some version of Android Studio , version problems can occur
